@@ -1,0 +1,84 @@
+#reference code
+#lists
+def positive_sum(arr):
+    # Your code here
+    sum=0
+    for num in arr:
+        if num >= 0:
+            sum += num
+            return sum
+            print(sum)
+    else: return 0
+ 
+ ------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    print(", ".join(["spam", "eggs", "ham"]))
+#prints "spam, eggs, ham"
+
+print("Hello ME".replace("ME", "world"))
+#prints "Hello world"
+
+print("This is a sentence.".startswith("This"))
+# prints "True"
+
+print("This is a sentence.".endswith("sentence."))
+# prints "True"
+
+print("This is a sentence.".upper())
+# prints "THIS IS A SENTENCE."
+
+print("AN ALL CAPS SENTENCE".lower())
+#prints "an all caps sentence"
+
+print("spam, eggs, ham".split(", "))
+#prints "['spam', 'eggs', 'ham']"
+
+def print_sum_twice(x, y):
+   print(x + y)
+   print(x + y)
+
+print_sum_twice(5, 8)
+
+def add_numbers(x, y):
+    total = x + y
+    return total
+    print("This won't be printed")
+
+print(add_numbers(4, 5))
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'factorial' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER n as parameter.
+#
+def factorial(n):
+    # Write your code here
+    return 1 if n <= 1 else n * factorial(n - 1)
+#    print("The factorial of ", n, " is : ")
+#    print(math.factorial(int(n)))
+#    return
+
+    
+    
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    result = factorial(n)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
