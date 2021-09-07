@@ -1,0 +1,10 @@
+def Collatz(n): 
+    while n != 1: 
+        print(n) 
+        if n & 1: 
+            n = 3 * n + 1
+        else: 
+            n = n // 2
+    print(n) 
+ 
+Collatz(int(input())) 
