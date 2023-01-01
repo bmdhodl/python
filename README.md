@@ -1,2 +1,2 @@
 # pat9000python
-Python Only
+Python based projects geared towards Datascience and Machine Learning.
